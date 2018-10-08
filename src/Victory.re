@@ -37,11 +37,12 @@ type padding = {
 module Theme = {
   type t;
 
-  [@bs.module "victory"] [@bs.scope "VictoryTheme"] external material: t = "";
+  [@bs.module "victory-native"] [@bs.scope "VictoryTheme"]
+  external material: t = "";
 };
 
 module Container = {
-  [@bs.module "victory"]
+  [@bs.module "victory-native"]
   external victoryContainer: ReasonReact.reactClass = "VictoryContainer";
 
   [@bs.deriving abstract]
@@ -65,7 +66,7 @@ module Container = {
 };
 
 module Chart = {
-  [@bs.module "victory"]
+  [@bs.module "victory-native"]
   external victoryChart: ReasonReact.reactClass = "VictoryChart";
 
   [@bs.deriving abstract]
@@ -135,7 +136,7 @@ module Chart = {
 };
 
 module Group = {
-  [@bs.module "victory"]
+  [@bs.module "victory-native"]
   external victoryGroup: ReasonReact.reactClass = "VictoryGroup";
 
   [@bs.deriving abstract]
@@ -185,7 +186,7 @@ module Group = {
 };
 
 module Pie = {
-  [@bs.module "victory"]
+  [@bs.module "victory-native"]
   external victoryPie: ReasonReact.reactClass = "VictoryPie";
 
   [@bs.deriving abstract]
@@ -242,7 +243,7 @@ module Pie = {
 };
 
 module Bar = {
-  [@bs.module "victory"]
+  [@bs.module "victory-native"]
   external victoryBar: ReasonReact.reactClass = "VictoryBar";
 
   [@bs.deriving abstract]
@@ -263,7 +264,7 @@ module Bar = {
 };
 
 module Axis = {
-  [@bs.module "victory"]
+  [@bs.module "victory-native"]
   external victoryAxis: ReasonReact.reactClass = "VictoryAxis";
 
   [@bs.deriving abstract]
@@ -309,7 +310,7 @@ module Axis = {
 };
 
 module Legend = {
-  [@bs.module "victory"]
+  [@bs.module "victory-native"]
   external victoryLegend: ReasonReact.reactClass = "VictoryLegend";
 
   [@bs.deriving abstract]
